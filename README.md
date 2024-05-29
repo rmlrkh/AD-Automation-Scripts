@@ -122,7 +122,7 @@ Parameters:
 -BackupFilePath: The file path where the backup will be stored.
 
 ### Restore Active Directory Objects
-**Script:** Restore-ADObjects.ps1
+**Script:** `Restore-ADObjects.ps1`
 
 Description: Restores Active Directory objects from a backup file.
 
