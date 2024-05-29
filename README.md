@@ -217,9 +217,9 @@ To use these scripts, follow these steps:
 ## Prerequisites
 To use these scripts, ensure you have the following:
 
-**Active Directory module for Windows PowerShell: This module must be installed and imported into your PowerShell session.**
+**Active Directory module for Windows PowerShell:** This module must be installed and imported into your PowerShell session.
 
-**Administrative Privileges: You need to run PowerShell as an administrator to execute these scripts.**
+**Administrative Privileges:** You need to run PowerShell as an administrator to execute these scripts.**
 
 Installing the Active Directory Module
 If the Active Directory module is not installed, you can install it by running:
