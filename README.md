@@ -12,7 +12,7 @@ This collection of PowerShell scripts is designed to automate common IT tasks re
 **Description:** Automates the creation of new user accounts in Active Directory.
 
 **Usage:**
-```powershell
+```
 .\Create-NewUser.ps1 -FirstName "John" -LastName "Doe" -OU "OU=Users,DC=example,DC=com" -DefaultPassword "P@ssw0rd"
 ```
 
@@ -30,7 +30,7 @@ Parameters:
 Description: Identifies and disables user accounts that haven't been used for a specified number of days.
 
 **Usage:**
-```powershell
+```
 .\Disable-InactiveUsers.ps1 -DaysInactive 90 -OU "OU=Users,DC=example,DC=com"
 ```
 
@@ -46,7 +46,7 @@ Parameters:
 Description: Resets a user's password and forces them to change it at next logon.
 
 **Usage:**
-```powershell
+```
 .\Reset-UserPassword.ps1 -SamAccountName "johndoe" -NewPassword "NewP@ssw0rd"
 ```
 Parameters:
@@ -61,7 +61,7 @@ Parameters:
 Description: Adds multiple users to a specified Active Directory group.
 
 **Usage:**
-```powershell
+```
 .\Add-UsersToGroup.ps1 -GroupName "GroupName" -UserNames "user1", "user2"
 ```
 Parameters:
@@ -81,12 +81,12 @@ Parameters:
 
 ## Reporting
 ### Generate Locked Out Users Report
-Script: Get-LockedOutUsers.ps1
+Script: `Get-LockedOutUsers.ps1`
 
 Description: Generates a report of user accounts that are currently locked out.
 
 **Usage:**
-```powershell
+```
 .\Get-LockedOutUsers.ps1
 ```
 Output: A CSV file named LockedOutUsersReport.csv containing the names, SAM account names, and lockout status of the locked-out users.
@@ -97,13 +97,73 @@ Output: A CSV file named LockedOutUsersReport.csv containing the names, SAM acco
 Description: Generates a report of all members in a specified Active Directory group.
 
 **Usage:**
-```powershell
+```
 .\Get-GroupMembershipReport.ps1 -GroupName "GroupName"
 ```
 Parameters:
 
 -GroupName: The name of the group for which the membership report will be generated.
 Output: A CSV file named GroupName-MembershipReport.csv containing the names and SAM account names of the group members.
+
+## Backup and Restore
+### Backup Active Directory Objects
+**Script:** `Backup-ADObjects.ps1`
+
+Description: Backs up specified Active Directory objects to a file.
+
+**Usage:**
+```
+.\Backup-ADObjects.ps1 -ObjectType "User" -BackupFilePath "C:\Backup\ADUsersBackup.ldf"
+```
+
+Parameters:
+
+-ObjectType: The type of AD object to back up (e.g., "User", "Group").
+-BackupFilePath: The file path where the backup will be stored.
+
+## Restore Active Directory Objects
+**Script:** Restore-ADObjects.ps1
+
+Description: Restores Active Directory objects from a backup file.
+
+**Usage:**
+```
+.\Restore-ADObjects.ps1 -BackupFilePath "C:\Backup\ADUsersBackup.ldf"
+```
+
+Parameters:
+
+-BackupFilePath: The file path of the backup to restore.
+
+## Account Management
+### Automated Account Unlocking
+**Script:** `Unlock-ADAccounts.ps1`
+
+Description: Automates the process of unlocking user accounts in Active Directory.
+
+**Usage:**
+```
+.\Unlock-ADAccounts.ps1 -SamAccountNames "user1", "user2"
+```
+
+Parameters:
+
+-SamAccountNames: An array of SAM account names to unlock.
+
+## System Maintenance
+### User Profile Cleanup
+**Script:** `Cleanup-UserProfiles.ps1`
+
+Description: Cleans up user profiles on local machines to free up space.
+
+Usage:
+```
+.\Cleanup-UserProfiles.ps1 -ComputerName "ComputerName" -DaysOld 30
+```
+Parameters:
+
+-ComputerName: The name of the computer where profiles will be cleaned up.
+-DaysOld: Profiles older than this number of days will be deleted.
 
 ## Usage
 To use these scripts, follow these steps:
@@ -130,6 +190,22 @@ Run the Script: Navigate to the directory where the script is located and run it
 # Remove users from group
 ```
 .\Remove-UsersFromGroup.ps1 -GroupName "GroupName" -UserNames "user1", "user2"
+```
+# Backup AD objects
+```
+.\Backup-ADObjects.ps1 -ObjectType "User" -BackupFilePath "C:\Backup\ADUsersBackup.ldf"
+```
+# Restore AD objects
+```
+.\Restore-ADObjects.ps1 -BackupFilePath "C:\Backup\ADUsersBackup.ldf"
+```
+# Unlock AD accounts
+```
+.\Unlock-ADAccounts.ps1 -SamAccountNames "user1", "user2"
+```
+# Cleanup user profiles
+```
+.\Cleanup-UserProfiles.ps1 -ComputerName "ComputerName" -DaysOld 30
 ```
 # Generate a locked-out users report
 ```
