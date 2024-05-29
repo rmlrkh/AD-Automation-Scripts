@@ -29,7 +29,7 @@ Parameters:
 
 Description: Identifies and disables user accounts that haven't been used for a specified number of days.
 
-Usage:
+**Usage:**
 ```powershell
 .\Disable-InactiveUsers.ps1 -DaysInactive 90 -OU "OU=Users,DC=example,DC=com"
 ```
@@ -45,7 +45,7 @@ Parameters:
 
 Description: Resets a user's password and forces them to change it at next logon.
 
-Usage:
+**Usage:**
 ```powershell
 .\Reset-UserPassword.ps1 -SamAccountName "johndoe" -NewPassword "NewP@ssw0rd"
 ```
@@ -60,7 +60,7 @@ Parameters:
 
 Description: Adds multiple users to a specified Active Directory group.
 
-Usage:
+**Usage:**
 ```powershell
 .\Add-UsersToGroup.ps1 -GroupName "GroupName" -UserNames "user1", "user2"
 ```
@@ -79,24 +79,24 @@ Parameters:
 -GroupName: The name of the group from which users will be removed.
 -UserNames: An array of usernames to remove from the group.
 
-Reporting
-Generate Locked Out Users Report
+## Reporting
+### Generate Locked Out Users Report
 Script: Get-LockedOutUsers.ps1
 
 Description: Generates a report of user accounts that are currently locked out.
 
-Usage:
+**Usage:**
 ```powershell
 .\Get-LockedOutUsers.ps1
 ```
 Output: A CSV file named LockedOutUsersReport.csv containing the names, SAM account names, and lockout status of the locked-out users.
 
-##Generate Group Membership Report
+## Generate Group Membership Report
 **Script:** `Get-GroupMembershipReport.ps1`
 
 Description: Generates a report of all members in a specified Active Directory group.
 
-Usage:
+**Usage:**
 ```powershell
 .\Get-GroupMembershipReport.ps1 -GroupName "GroupName"
 ```
