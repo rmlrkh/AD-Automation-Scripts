@@ -221,7 +221,7 @@ To use these scripts, ensure you have the following:
 
 **Administrative Privileges:** You need to run PowerShell as an administrator to execute these scripts.**
 
-Installing the Active Directory Module
+### Installing the Active Directory Module
 If the Active Directory module is not installed, you can install it by running:
 
 ```Install-WindowsFeature -Name RSAT-AD-PowerShell```
