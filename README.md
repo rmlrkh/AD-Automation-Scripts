@@ -167,9 +167,8 @@ Parameters:
 ## Usage
 To use these scripts, follow these steps:
 
-1. Open PowerShell:
-2. Launch PowerShell with administrative privileges.
-3. Navigate to the directory where the script is located and run it with the appropriate parameters.
+1. Launch PowerShell with administrative privileges.
+2. Navigate to the directory where the script is located and run it with the appropriate parameters.
 
 # Create a new user
 ```
@@ -218,8 +217,9 @@ To use these scripts, follow these steps:
 ## Prerequisites
 To use these scripts, ensure you have the following:
 
-Active Directory module for Windows PowerShell: This module must be installed and imported into your PowerShell session.
-Administrative Privileges: You need to run PowerShell as an administrator to execute these scripts.
+**Active Directory module for Windows PowerShell: This module must be installed and imported into your PowerShell session.**
+
+**Administrative Privileges: You need to run PowerShell as an administrator to execute these scripts.**
 
 Installing the Active Directory Module
 If the Active Directory module is not installed, you can install it by running:
