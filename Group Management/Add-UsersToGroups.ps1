@@ -1,4 +1,4 @@
-# Add-UsersToGroup.ps1
+# Add-UsersToGroups.ps1
 Param (
     [string]$GroupName,
     [string[]]$UserNames
