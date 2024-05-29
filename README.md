@@ -167,8 +167,9 @@ Parameters:
 ## Usage
 To use these scripts, follow these steps:
 
-Open PowerShell: Launch PowerShell with administrative privileges.
-Run the Script: Navigate to the directory where the script is located and run it with the appropriate parameters.
+1. Open PowerShell:
+2. Launch PowerShell with administrative privileges.
+3. Navigate to the directory where the script is located and run it with the appropriate parameters.
 
 # Create a new user
 ```
