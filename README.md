@@ -69,7 +69,7 @@ Parameters:
 -GroupName: The name of the group to which users will be added.
 -UserNames: An array of usernames to add to the group.
 
-## Remove Users from Groups
+### Remove Users from Groups
 **Script:** `Remove-UsersFromGroup.ps1`
 
 Description: Removes multiple users from a specified Active Directory group.
@@ -121,7 +121,7 @@ Parameters:
 -ObjectType: The type of AD object to back up (e.g., "User", "Group").
 -BackupFilePath: The file path where the backup will be stored.
 
-## Restore Active Directory Objects
+### Restore Active Directory Objects
 **Script:** Restore-ADObjects.ps1
 
 Description: Restores Active Directory objects from a backup file.
@@ -150,7 +150,6 @@ Parameters:
 
 -SamAccountNames: An array of SAM account names to unlock.
 
-## System Maintenance
 ### User Profile Cleanup
 **Script:** `Cleanup-UserProfiles.ps1`
 
