@@ -91,7 +91,7 @@ Description: Generates a report of user accounts that are currently locked out.
 ```
 Output: A CSV file named LockedOutUsersReport.csv containing the names, SAM account names, and lockout status of the locked-out users.
 
-## Generate Group Membership Report
+### Generate Group Membership Report
 **Script:** `Get-GroupMembershipReport.ps1`
 
 Description: Generates a report of all members in a specified Active Directory group.
