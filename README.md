@@ -1,5 +1,30 @@
 # Active Directory Automation Scripts
 
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Scripts](#scripts)
+    - [User Management](#user-management)
+        - [Create New User Accounts](#create-new-user-accounts)
+        - [Disable Inactive User Accounts](#disable-inactive-user-accounts)
+        - [Reset User Passwords](#reset-user-passwords)
+    - [Group Management](#group-management)
+        - [Add Users to Groups](#add-users-to-groups)
+        - [Remove Users from Groups](#remove-users-from-groups)
+    - [Reporting](#reporting)
+        - [Generate Locked Out Users Report](#generate-locked-out-users-report)
+        - [Generate Group Membership Report](#generate-group-membership-report)
+    - [Backup and Restore](#backup-and-restore)
+        - [Backup Active Directory Objects](#backup-active-directory-objects)
+        - [Restore Active Directory Objects](#restore-active-directory-objects)
+    - [Account Management](#account-management)
+        - [Automated Account Unlocking](#automated-account-unlocking)
+        - [User Profile Cleanup](#user-profile-cleanup)
+3. [Usage](#usage)
+4. [Prerequisites](#prerequisites)
+    - [Installing the Active Directory Module](#installing-the-active-directory-module)
+5. [License](#license)
+
 ## Overview
 This collection of PowerShell scripts is designed to automate common IT tasks related to Active Directory. Whether you're managing user accounts, groups, or generating reports, these scripts will help streamline your workflows and save you time.
 
