@@ -1,5 +1,8 @@
 # Active Directory Automation Scripts
 
+## Overview
+This collection of PowerShell scripts is designed to automate common IT tasks related to Active Directory. Whether you're managing user accounts, groups, or generating reports, these scripts will help streamline your workflows and save you time.
+
 ## Table of Contents
 
 1. [Overview](#overview)
@@ -24,9 +27,6 @@
 4. [Prerequisites](#prerequisites)
     - [Installing the Active Directory Module](#installing-the-active-directory-module)
 5. [License](#license)
-
-## Overview
-This collection of PowerShell scripts is designed to automate common IT tasks related to Active Directory. Whether you're managing user accounts, groups, or generating reports, these scripts will help streamline your workflows and save you time.
 
 ## Scripts
 
